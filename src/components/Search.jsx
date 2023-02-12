@@ -25,7 +25,7 @@ const Search = ({onSearchChange}) => {
     }
 
   return (
-    <AsyncPaginate className="w-7/12 mx-auto" placeholder="Search for city" debounceTimeout={600}
+    <AsyncPaginate className="my-8" placeholder="Search for city" debounceTimeout={600}
     value={search}
     onChange={handleOnChange}
     loadOptions={loadOptions}
