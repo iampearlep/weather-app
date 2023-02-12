@@ -3,7 +3,6 @@ import Search from './components/Search'
 // import Forecast from './components/Forecast'
 import CurrentWeather from './components/CurrentWeather'
 import { weatherApiUrl, weatherApiKey } from './components/api'
-// import BackgroundImg from './assets/bg-img.webp'
 const App = () => {
 const [currentWeather, setCurrentWeather] = useState(null)
 const [forecast, setForecast] = useState(null);
@@ -24,7 +23,7 @@ const [forecast, setForecast] = useState(null);
   }
   console.log(forecast);
   return (
-    <div className=' mx-auto mt-24 w-8/12'>
+    <div className='flex flex-col mx-auto mt-24 w-8/12 md:w-2/5'>
       {/* <img className='flex w-full h-full absolute -mt-36' src={BackgroundImg} alt="" />
      <div className='mt-32 relative z-10 pt-10 w-2/5 mx-auto flex flex-col justify-center items-center bg-purple-300'> */}
      <Search onSearchChange={handleOnSearchChange} />
