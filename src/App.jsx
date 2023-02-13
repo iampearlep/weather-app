@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Search from './components/Search'
-// import Forecast from './components/Forecast'
 import CurrentWeather from './components/CurrentWeather'
 import { weatherApiUrl, weatherApiKey } from './components/api'
 const App = () => {
@@ -23,12 +22,10 @@ const [forecast, setForecast] = useState(null);
   }
   console.log(forecast);
   return (
-    <div className='flex flex-col mx-auto mt-24 w-8/12 md:w-2/5'>
-      {/* <img className='flex w-full h-full absolute -mt-36' src={BackgroundImg} alt="" />
-     <div className='mt-32 relative z-10 pt-10 w-2/5 mx-auto flex flex-col justify-center items-center bg-purple-300'> */}
+    <div className='flex flex-col mx-auto mt-10 w-11/12 md:w-2/5'>
+      <h1 className='text-4xl text-sky-300 font-semibold text-center my-8'>Weather App</h1>
      <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather}/>}
-     {/* </div> */}
     </div>
   )
 }
